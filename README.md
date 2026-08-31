@@ -1,18 +1,26 @@
-# wallpaper-gifs
-A simple wallpaper gallery for Linux.
+# 🌌 wallpaper-gifs
 
-Open `index.html` in your browser or publish this repository with GitHub Pages to browse the image collection.
+A curated collection of static and animated GIF wallpapers optimized for Linux window managers (Hyprland, Sway, i3, bspwm) and desktop environments.
 
-## Preview
-![Wallpaper](./wallpapers/1FlyI.jpg)
+Open `index.html` in your browser or publish this repository with GitHub Pages to browse the wallpaper collection.
 
-## How to use
-1. Open `index.html` in a browser.
-2. Click "View" to preview a wallpaper.
-3. Click "Download" to save the wallpaper locally.
+---
 
-## Files
-- `index.html`: gallery page
-- `styles.css`: gallery styles
-- `script.js`: loads wallpaper thumbnails and download links
-- `wallpapers/`: image files
+## 🖼️ Previews
+
+| Preview | File |
+| :---: | :---: |
+| ![Wallpaper](./wallpapers/1FlyI.jpg) | `1FlyI.jpg` |
+
+*(Add more rows above using `![Name](./wallpapers/your-file.gif)` as you add wallpapers to the folder)*
+
+---
+
+## 🚀 How to Set Wallpaper on Linux
+
+### Wayland (Hyprland / Sway)
+
+**Using `swww` (Animated & Static):**
+```bash
+swww-daemon
+swww img ./wallpapers/1FlyI.jpg
