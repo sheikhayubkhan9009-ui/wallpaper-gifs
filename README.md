@@ -22,5 +22,14 @@ Open `index.html` in your browser or publish this repository with GitHub Pages t
 
 **Using `swww` (Animated & Static):**
 ```bash
-swww-daemon
-swww img ./wallpapers/1FlyI.jpg
+# Start the daemon (if not already running)
+swww-daemon &
+
+# Set a static or GIF wallpaper with custom transition options
+swww img ./wallpapers/1FlyI.jpg \
+  --transition-type grow \
+  --transition-pos center \
+  --transition-fps 60
+
+# Target a specific monitor (e.g., HDMI-A-1 or eDP-1)
+swww img ./wallpapers/1FlyI.jpg -o HDMI-A-1
